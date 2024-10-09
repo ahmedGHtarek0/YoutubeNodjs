@@ -1,0 +1,37 @@
+{
+  "name": "youtubewithai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cron": "^3.1.7",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15",
+    "typescript": "^5.6.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
+    "@types/nodemailer": "^6.4.16",
+    "i": "^0.3.7",
+    "nodemon": "^3.1.7",
+    "npm": "^10.9.0",
+    "ts-node": "^10.9.2"
+  }
+}
