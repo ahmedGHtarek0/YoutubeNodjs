@@ -8,6 +8,43 @@ Welcome to the advanced technical guide for **YoutubeNodjs**. This document cove
 
 The project follows a **Service-Oriented Architecture** (SOA) pattern, separating concerns between routing, business logic, and data persistence.
 
+```mermaid
+graph TD
+    subgraph Client_Layer
+        A[Mobile App] -->|HTTPS| E
+        B[Web Dashboard] -->|HTTPS| E
+    end
+
+    subgraph API_Gateway_Express
+        E[Express.js Server] --> F{Auth Middleware}
+        F -->|Authorized| G[Routes]
+        F -->|Unauthorized| H[Error Handler]
+    end
+
+    subgraph Service_Logic
+        G --> I[Auth Service]
+        G --> J[Admin Service]
+        G --> K[User Service]
+        G --> L[Cron Job Service]
+    end
+
+    subgraph External_Integrations
+        I --> M[JWT / Cookies]
+        J --> N[Cloudinary Media]
+        K --> O[Nodemailer]
+        L --> P[Excel/XLSX Gen]
+    end
+
+    subgraph Persistence_Layer
+        M & N & O & P --> Q[(MongoDB)]
+    end
+
+    style Q fill:#47A248,stroke:#333,stroke-width:2px
+    style E fill:#339933,stroke:#333,stroke-width:2px
+    style F fill:#f96,stroke:#333,stroke-width:2px
+```
+
+
 ### 1. Database Layer (`/src/DataBase`)
 The system uses **Mongoose** for object modeling. The connection is established in `index.ts` and managed within the DataBase folder to ensure high availability and proper error handling.
 

@@ -11,13 +11,14 @@ YoutubeNodjs is a robust, production-ready backend application built with **Node
 
 ## 🌟 Key Features
 
--   **🔐 Secure Authentication**: JWT-based login and registration system.
--   **👤 User Management**: Full CRUD operations for user profiles.
--   **🛠️ Admin Dashboard**: Specialized routes for administrative oversight.
--   **📂 File Handling**: Integrated with **Multer** and **Cloudinary** for seamless media uploads.
--   **📧 Email Services**: Automated notifications via **Nodemailer**.
--   **📊 Data Export**: Export data to Excel files using the **xlsx** library.
--   **⏰ Automated Tasks**: Scheduled background jobs using **Cron**.
+-   **🔐 Secure Authentication**: JWT-based login and registration system with HTTP-only cookies.
+-   **👤 User Management**: Full CRUD operations for user profiles and account settings.
+-   **🛠️ Admin Dashboard**: Specialized routes for administrative oversight and data management.
+-   **📂 File Handling**: Integrated with **Multer** and **Cloudinary** for high-performance media storage.
+-   **📧 Email Services**: Automated notifications and password resets via **Nodemailer**.
+-   **📊 Data Export**: Generation of professional Excel reports using the **xlsx** library.
+-   **⏰ Automated Tasks**: Robust background job scheduling using **Cron**.
+-   **🤖 AI Ready**: Designed for seamless integration with AI-driven content analysis.
 
 ---
 
